@@ -1,4 +1,4 @@
-#  class Animal:
+class Animal:
     def __init__(
         self,
         name: str,
@@ -16,6 +16,9 @@
         if not self.is_hungry:
             return 0
 
+        print(f"Eating {self.appetite} food points...")
+        self.is_hungry = False
+        return self.appetite
         print(f"Eating {self.appetite} food points...")
         self.is_hungry = False
         return self.appetite
